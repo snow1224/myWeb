@@ -1,0 +1,242 @@
+/*START:type_style */
+
+body{
+  width:90%;
+  margin:15px auto;
+  font-family: Arial, "MS Trebuchet", sans-serif;
+  background-image:url(./img/background-snow.jpg);
+  background-size: cover;
+    color: white;
+    font-family:Microsoft JhengHei;
+}
+
+p{
+  margin:0 0 20px 0;
+  font-family:Microsoft JhengHei;
+  color: white;
+}
+
+p, li{
+  line-height:20px;
+  font-family: Arial, "MS Trebuchet", sans-serif;
+}
+/*END:type_style */
+
+/*START:header_style */
+header#page_header{
+  width:100%;
+  opacity: 0.9;
+}
+/*END:header_style */
+
+/*START:nav_style */
+header#page_header nav ul, footer#page_footer nav ul{
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+  
+}
+
+header#page_header nav ul li, footer#page_footer nav ul li{
+  padding:0;
+  margin: 0 20px 0 0;
+  display:inline;
+  
+  
+}
+/*END:nav_style */
+
+/*START:posts_style */
+section#posts{
+  float: left;
+  width: 80%;
+  min-height: 400px;
+  overflow: auto;
+  opacity:0.9;
+  background-color: black;
+/*  background-image: url(./img/background.jpg);*/
+/*  background-size: cover;*/
+}
+
+
+section#posts aside{
+  float: right;
+  width: 35%;
+  margin-left: 5%;
+  font-size: 20sp;
+  line-height: 40px;
+    color: black;
+}
+/*END:posts_style */
+
+/*START:sidebar_style */
+section#sidebar{
+  min-height: 400px;
+  background-color: whitesmoke;
+/*  opacity: 0.9;*/
+  float: left;
+  width: 20%;
+  color: black;
+}
+/*END:sidebar_style */
+section ul li{
+    display: block;
+}
+section ul li a{
+    text-decoration: none;
+    color: darkslateblue;
+    font-family:Microsoft JhengHei;
+}
+section ul li a:hover{
+    background-color: cornflowerblue;
+}
+
+/*START:footer_style */
+footer#page_footer{
+  clear: both;
+  width: 100%; 
+  display: block; 
+  text-align: center;
+  background-color: #555;
+  color: white;
+}
+/*END:footer_style */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover, .dropdown:hover .dropbtn {
+  background-color: #005f5f;
+}
+
+nav li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+img{
+    display: none;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+}
+img#img1{
+    float:left;
+}
+video{
+    display: none;
+}
+
+aside i b{
+    color: lightyellow;
+}
+/*home manu*/
+#home{
+    cursor: pointer;
+}
+
+.menu-wrap {
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 300px;
+	margin-left: -300px;
+	font-size: 1em;
+	font-weight: 700;
+	overflow: auto;
+	transition: .25s;
+	z-index: 10;
+}
+.menu-show {
+	margin-left: -5%;
+	box-shadow: 4px 2px 15px 1px #B9ADAD;
+}
+.menu-sidebar {
+	margin: 75px 0 80px 10px;
+	position: relative;
+	top: 70px;
+}
+.menu-sidebar li {
+	padding: 18px 22px 0;
+}
+.menu-sidebar li > a {
+	color: #f3f3f3;
+	font-size: 1.18em;
+	position: relative;
+}
+.menu-sidebar li > a::after {
+	content: "";
+	display: block;
+	height: 0.15em;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%) ;
+	background-image: linear-gradient(to right, transparent 50.3%, #FFFA3B 50.3%);
+	transition: background-position .2s .1s ease-out;
+	background-size: 200% auto;
+}
+.menu-sidebar li > a:hover::after {
+	background-position: -100% 0;
+}
+.menu-sidebar .menu-item-has-children {
+	position: relative;
+}
+.menu-sidebar .menu-item-has-children .sub-menu {
+	display: none;
+}
+.sidebar-menu-arrow::after {
+	content: "\f107";
+	font-family: 'FontAwesome';
+	padding: 10px;
+	color: #FFFA3B;
+	position: relative;
+}
+.sidebar-menu-arrow:hover::after {
+	cursor: pointer;
+	color: #fff;
+}
+.sidebar-menu-arrow:active::after {
+	top: 2px;
+}

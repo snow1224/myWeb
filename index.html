@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+ ! Excerpted from "HTML5 and CSS3",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/bhh5 for more book information.
+-->
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../hw1/css/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../hw1/css/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+      document.createElement("nav");
+      document.createElement("header");
+      document.createElement("footer");
+      document.createElement("section");
+      document.createElement("aside");
+      document.createElement("article");
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <script src="index.js"></script>
+    <title>ssw's blog</title>
+</head>
+
+<body>
+
+    <div class="menu-wrap">
+        <button id="menu-btn" class="btn btn-info" style="float: right;">
+            <span id="menuIcon" class="glyphicon glyphicon-list"></span>
+        </button>
+        <div class="menu-sidebar">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li class="menu-item-has-children">
+                    <a href="#">更多作品</a>
+                    <span class="sidebar-menu-arrow"></span>
+                    <ul class="sub-menu">
+                        <li><a href="#">Alignment</a></li>
+                        <li><a href="#">Markup</a></li>
+                        <li><a href="#">Comments</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Get In Touch</a></li>
+            </ul>
+        </div>
+    </div>
+    <header id="page_header" style="background-color: #333;">
+
+        <h1 style="color:white">雪朱的部落格</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a id="home" herf="#" class="active" onclick="homePage()">Home</a>
+                </li>
+
+                <li style="float: right;">
+                    <a href="#" onclick="contactPage()">Contact</a>
+                </li>
+                <li class="dropdown" style="float: right;"><a href="#" class="dropbtn">出遊記</a>
+                    <div class="dropdown-content">
+                        <a href="#" id="komei" onclick="komeiPage()">高美濕地</a>
+                        <a href="#" id="iho" onclick="ihoPage()">高雄愛河</a>
+                        <a href="#" id="holi" onclick="holiPage()">台中花博后里區</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="posts">
+        <article class="post">
+
+            <header>
+                <h2 id="title">歡迎來到我的部落格~</h2>
+
+                <br>
+                <p id="content">
+                    這邊會不定時更新狀態和作品，有興趣可以看看。
+                </p>
+
+
+            </header>
+            <aside>
+                <i><b id="quote">
+                        &quot;Progress every day, even if only 5 cm.&quot;
+                    </b>
+                </i>
+            </aside>
+            <center>
+                <img src="" id="img1" width="400" height="300">
+                <img src="" id="img2" width="400" height="300">
+                <video id="video" src="" width="200" height="400" controls></video>
+            </center>
+            <footer>
+                <p id="today">
+                    <script>
+                        getTime();
+                    </script>
+                </p>
+            </footer>
+        </article>
+    </section>
+
+    <section id="sidebar">
+        <!--        <nav>-->
+        <h3>HomeWork</h3>
+        <ul>
+            <li><a href="../hw1/hw1.html" target="_blank">自我介紹</a></li>
+            <li><a href="../hw2/index.html" target="_blank">表單與表格</a></li>
+            <li><a href="../hw3/index.html" target="_blank">nav與css使用</a></li>
+            <li><a href="https://ssw.cs.pu.edu.tw/~ssw/hw5/hw5.html" target="_blank">JQuery應用--輸入成績</a></li>
+            <li><a href="https://ssw.cs.pu.edu.tw/~ssw/hw6/hw6.html" target="_blank">取得JSON資料</a></li>
+        </ul>
+        <h3>以前的作品</h3>
+        <ul>
+            <li><a href="https://ssw.cs.pu.edu.tw:8000/site" target="_blank">音樂活動網站</a></li>
+        </ul>
+        <h3>現在製作的網頁</h3>
+        <ul>
+            <li><a href="http://127.0.0.1/blockchain/index.php" target="_blank">專題製作--區塊鏈微學分系統</a></li>
+            <li><a href="http://127.0.0.1/FINAL/final.php" target="_blank">臺灣天氣系統</a></li>
+        </ul>
+        <!--        </nav>-->
+    </section>
+
+    <footer id="page_footer">
+        <p>&copy; 2019 By julie</p>
+        <nav>
+            <ul>
+
+            </ul>
+        </nav>
+    </footer>
+    <a href=https://zh.pngtree.com>來自pngtree.com的圖形 </a> </body></html>
+
